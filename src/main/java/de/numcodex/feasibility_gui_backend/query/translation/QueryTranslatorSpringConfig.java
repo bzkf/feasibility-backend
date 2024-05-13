@@ -104,7 +104,22 @@ public class QueryTranslatorSpringConfig {
                 entry("http://terminology.hl7.org/CodeSystem/consentcategorycodes", "consentcategory"),
                 entry("urn:oid:2.16.840.1.113883.3.1937.777.24.5.3", "consent"),
                 entry("http://hl7.org/fhir/sid/icd-o-3", "icdo3"),
-                entry("http://hl7.org/fhir/consent-provision-type", "provisiontype"))));
+                entry("http://hl7.org/fhir/consent-provision-type", "provisiontype"),
+                entry("http://dktk.dkfz.de/fhir/onco/core/CodeSystem/SeitenlokalisationCS", "seitenlokalisation"),
+                entry("http://dktk.dkfz.de/fhir/onco/core/CodeSystem/JNUCS", "jnu"),
+                entry("http://dktk.dkfz.de/fhir/onco/core/CodeSystem/UiccstadiumCS", "uiccstadium"),
+                entry("http://dktk.dkfz.de/fhir/onco/core/CodeSystem/GradingCS", "grading"),
+                entry("http://dktk.dkfz.de/fhir/onco/core/CodeSystem/SYSTTherapieartCS", "systtherapieart"),
+                entry("http://dktk.dkfz.de/fhir/onco/core/CodeSystem/VerlaufLokalerTumorstatusCS",
+                        "verlauflokalerstatus"),
+                entry("http://dktk.dkfz.de/fhir/onco/core/CodeSystem/VitalstatusCS", "vitalstatus"),
+                entry("http://dktk.dkfz.de/fhir/onco/core/CodeSystem/VerlaufTumorstatusLymphknotenCS",
+                        "verlaufstatuslymphknoten"),
+                entry("http://dktk.dkfz.de/fhir/onco/core/CodeSystem/GesamtbeurteilungTumorstatusCS",
+                        "gesamtbeurteilungtumorstatus"),
+                entry("http://dktk.dkfz.de/fhir/onco/core/CodeSystem/GenetischeVarianteCS", "genetischevariante"),
+                entry("http://dktk.dkfz.de/fhir/onco/core/CodeSystem/VerlaufTumorstatusFernmetastasenCS", "verlauftumorstatusfernmetastasen")
+            )));
     }
 
     @Qualifier("cql")
