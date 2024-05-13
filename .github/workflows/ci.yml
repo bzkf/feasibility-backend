@@ -2,8 +2,6 @@ name: Docker
 
 on:
   push:
-    branches:
-    - '**'
     tags:
     - v[0-9]+.[0-9]+.[0-9]+**
   pull_request:
@@ -14,6 +12,13 @@ jobs:
 
   tests:
     runs-on: ubuntu-latest
+    permissions:
+      contents: read
+      id-token: write
+      packages: write
+      pull-requests: write
+      actions: read
+      security-events: write
     steps:
       - uses: actions/checkout@v4
 
@@ -70,6 +75,13 @@ jobs:
 
   security-scan:
     runs-on: ubuntu-latest
+    permissions:
+      contents: read
+      id-token: write
+      packages: write
+      pull-requests: write
+      actions: read
+      security-events: write
     steps:
     - uses: actions/checkout@v4
 
@@ -117,7 +129,13 @@ jobs:
   integration-test:
     needs: tests
     runs-on: ubuntu-22.04
-
+    permissions:
+      contents: read
+      id-token: write
+      packages: write
+      pull-requests: write
+      actions: read
+      security-events: write
     steps:
       - name: Check out Git repository
         uses: actions/checkout@v4
@@ -175,6 +193,13 @@ jobs:
       - integration-test
       - security-scan
     runs-on: ubuntu-latest
+    permissions:
+      contents: read
+      id-token: write
+      packages: write
+      pull-requests: write
+      actions: read
+      security-events: write
     steps:
     - uses: actions/checkout@v4
 
