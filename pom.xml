@@ -26,7 +26,7 @@
     <java.version>17</java.version>
     <mockwebserver.version>4.10.0</mockwebserver.version>
     <okhttp3.version>4.10.0</okhttp3.version>
-    <ontology-tag>v.0.2.4-BZKF</ontology-tag>
+    <ontology-tag>v0.0.1-Bildgebung</ontology-tag>
   </properties>
 
   <dependencies>
@@ -475,7 +475,7 @@
                   <executable>curl</executable>
                   <arguments>
                     <argument>-L</argument>
-                    <argument>https://github.com/bzkf/fhir-ontology-generator/raw/${ontology-tag}/example/dktk_oncology/generated-ontology/backend.zip</argument>
+                    <argument>https://github.com/bzkf/fhir-ontology-generator/raw/${ontology-tag}/example/bildgebung_prelim/generated-ontology/backend.zip</argument>
                     <argument>-o</argument>
                     <argument>ontology/backend.zip</argument>
                   </arguments>
@@ -525,7 +525,7 @@
                   <executable>curl</executable>
                   <arguments>
                     <argument>-L</argument>
-                    <argument>https://github.com/bzkf/fhir-ontology-generator/raw/${ontology-tag}/example/dktk_oncology/generated-ontology/mapping.zip</argument>
+                    <argument>https://github.com/bzkf/fhir-ontology-generator/raw/${ontology-tag}/example/bildgebung_prelim/generated-ontology/mapping.zip</argument>
                     <argument>-o</argument>
                     <argument>ontology/mapping.zip</argument>
                   </arguments>
