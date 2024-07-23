@@ -11,7 +11,7 @@ on:
 jobs:
 
   tests:
-    runs-on: ubuntu-24.04
+    runs-on: ubuntu-latest
     permissions:
       contents: read
       id-token: write
@@ -74,7 +74,7 @@ jobs:
           path: /tmp/feasibilityBackend.tar
 
   security-scan:
-    runs-on: ubuntu-24.04
+    runs-on: ubuntu-latest
     permissions:
       contents: read
       id-token: write
@@ -128,7 +128,7 @@ jobs:
 
   integration-test:
     needs: tests
-    runs-on: ubuntu-24.04
+    runs-on: ubuntu-22.04
     permissions:
       contents: read
       id-token: write
@@ -192,7 +192,7 @@ jobs:
       - tests
       - integration-test
       - security-scan
-    runs-on: ubuntu-24.04
+    runs-on: ubuntu-latest
     permissions:
       contents: read
       id-token: write
