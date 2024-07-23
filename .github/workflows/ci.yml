@@ -13,11 +13,11 @@ jobs:
   tests:
     runs-on: ubuntu-latest
     permissions:
-      contents: read
+      contents: write
       id-token: write
       packages: write
       pull-requests: write
-      actions: read
+      actions: write
       security-events: write
     steps:
       - uses: actions/checkout@v4
@@ -76,11 +76,11 @@ jobs:
   security-scan:
     runs-on: ubuntu-latest
     permissions:
-      contents: read
+      contents: write
       id-token: write
       packages: write
       pull-requests: write
-      actions: read
+      actions: write
       security-events: write
     steps:
     - uses: actions/checkout@v4
@@ -130,11 +130,11 @@ jobs:
     needs: tests
     runs-on: ubuntu-22.04
     permissions:
-      contents: read
+      contents: write
       id-token: write
       packages: write
       pull-requests: write
-      actions: read
+      actions: write
       security-events: write
     steps:
       - name: Check out Git repository
@@ -194,11 +194,11 @@ jobs:
       - security-scan
     runs-on: ubuntu-latest
     permissions:
-      contents: read
+      contents: write
       id-token: write
       packages: write
       pull-requests: write
-      actions: read
+      actions: write
       security-events: write
     steps:
     - uses: actions/checkout@v4
