@@ -1,4 +1,4 @@
-FROM eclipse-temurin:17-jre
+FROM eclipse-temurin:17-jre@sha256:b9f5c0acd03eb8275690fe310506f62743a5aaf90e37d165bc0484037a5a9376
 
 RUN apt update -yqq && apt upgrade -yqq && \
     apt-get autoremove -y && apt-get clean && rm -rf /var/lib/apt/lists/
