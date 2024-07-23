@@ -61,7 +61,7 @@ jobs:
         uses: docker/setup-buildx-action@v3
 
       - name: Build and Export to Docker
-        uses: docker/build-push-action@v5
+        uses: docker/build-push-action@v6
         with:
           context: .
           tags: backend:latest
@@ -106,7 +106,7 @@ jobs:
       run: mvn -Pdownload-ontology -B -DskipTests package
 
     - name: Build and push Docker image
-      uses: docker/build-push-action@v5
+      uses: docker/build-push-action@v6
       with:
         context: .
         tags: security-scan-build:latest
@@ -243,7 +243,7 @@ jobs:
       uses: docker/setup-buildx-action@v3
 
     - name: Build and push Docker image
-      uses: docker/build-push-action@v5
+      uses: docker/build-push-action@v6
       with:
         context: .
         platforms: linux/amd64,linux/arm64
