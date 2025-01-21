@@ -144,7 +144,7 @@ public class DSFQueryManagerTest {
 
         assertEquals(businessKey, queryId);
         assertNotNull(library.getName());
-        assertEquals("http://medizininformatik-initiative.de/bpe/Process/feasibilityRequest|1.0",
+        assertEquals("http://medizininformatik-initiative.de/bpe/Process/feasibilityRequest|1.1",
                 task.getInstantiatesCanonical());
         assertEquals(1, task.getMeta().getProfile().stream().filter(p -> p.getValueAsString()
                         .equals("http://medizininformatik-initiative.de/fhir/StructureDefinition/feasibility-task-request"))

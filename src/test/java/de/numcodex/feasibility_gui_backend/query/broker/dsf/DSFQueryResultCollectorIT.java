@@ -67,7 +67,7 @@ public class DSFQueryResultCollectorIT {
                 .setStatus(COMPLETED)
                 .setIntent(ORDER)
                 .setAuthoredOn(new Date())
-                .setInstantiatesCanonical("http://dsf.dev/bpe/Process/feasibilityRequest|1.0");
+                .setInstantiatesCanonical("http://dsf.dev/bpe/Process/feasibilityRequest|1.1");
 
         task.getRequester()
                 .setType("Organization")
