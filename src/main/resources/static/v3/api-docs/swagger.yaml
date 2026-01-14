@@ -1164,7 +1164,7 @@ paths:
                 $ref: "#/components/schemas/SystemInfo"
       tags:
         - intrinsics
-  /.settings:
+  /backend/.settings:
     get:
       summary: Offers config settings needed by the frontend.
       description: ''
