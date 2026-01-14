@@ -52,7 +52,7 @@ public class SettingsController {
   private Integer maxSavedQueriesPerUser;
 
 
-  @GetMapping("/.settings")
+  @GetMapping("/backend/.settings")
   public Map<String, Object> getSettings() {
     return Map.ofEntries(
         Map.entry(KEY_REST_API_PATH, WebSecurityConfig.PATH_API),
