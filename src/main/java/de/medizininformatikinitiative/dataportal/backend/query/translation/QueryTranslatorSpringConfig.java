@@ -113,7 +113,14 @@ public class QueryTranslatorSpringConfig {
             entry("http://fhir.de/CodeSystem/Kontaktebene", "kontaktebene"),
             entry("http://www.orpha.net", "orphanet"),
             entry("fdpg.consent.combined", "fdpgcombinedconsent"),
-            entry("http://hl7.org/fhir/consent-provision-type", "provisiontype"))));
+            entry("http://hl7.org/fhir/consent-provision-type", "provisiontype"),
+            entry("https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/CodeSystem/mii-cs-onko-therapieplanung-typ", "therapieplanungtyp"),
+            entry("https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/CodeSystem/mii-cs-onko-residualstatus", "residualstatus"),
+            entry("https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/CodeSystem/mii-cs-onko-nebenwirkung-ctcae-grad","ctcaegrad"),
+            entry("https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/CodeSystem/mii-cs-onko-fernmetastasen", "fernmetastasen"),
+            entry("https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/CodeSystem/mii-cs-onko-grading", "onkograding"),
+            entry("https://www.uicc.org/resources/tnm", "tnm")
+        )));
   }
 
 
