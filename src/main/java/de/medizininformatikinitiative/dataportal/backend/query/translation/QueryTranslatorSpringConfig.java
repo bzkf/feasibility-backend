@@ -119,7 +119,12 @@ public class QueryTranslatorSpringConfig {
             entry("https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/CodeSystem/mii-cs-onko-nebenwirkung-ctcae-grad","ctcaegrad"),
             entry("https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/CodeSystem/mii-cs-onko-fernmetastasen", "fernmetastasen"),
             entry("https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/CodeSystem/mii-cs-onko-grading", "onkograding"),
-            entry("https://www.uicc.org/resources/tnm", "tnm")
+            entry("https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/CodeSystem/mii-cs-onko-studienteilnahme", "studienteilnahme"),
+            entry("https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/CodeSystem/mii-cs-onko-allgemeiner-leistungszustand-ecog", "ecog"),
+            entry("https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/CodeSystem/mii-cs-onko-allgemeiner-leistungszustand-karnofsky", "karnofsky"),
+            entry("https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/CodeSystem/mii-cs-onko-verlauf-gesamtbeurteilung", "gesamtbeurteilung"),
+            entry("https://www.uicc.org/resources/tnm", "tnm"),
+            entry("http://terminology.hl7.org/CodeSystem/v2-0487", "v20487")
         )));
   }
 
