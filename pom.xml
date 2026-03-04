@@ -380,6 +380,17 @@
         <enabled>true</enabled>
       </snapshots>
     </repository>
+    <repository>
+      <id>bzkf</id>
+      <name>GitHub BZKF Apache Maven Packages</name>
+      <url>https://maven.pkg.github.com/bzkf/*</url>
+      <releases>
+        <enabled>true</enabled>
+      </releases>
+      <snapshots>
+        <enabled>true</enabled>
+      </snapshots>
+    </repository>
   </repositories>
 
 
