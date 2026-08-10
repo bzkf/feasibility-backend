@@ -43,7 +43,8 @@ import static org.junit.jupiter.api.Assertions.assertThrows;
 @Import({TerminologyEsService.class})
 @Testcontainers
 @DataElasticsearchTest(properties = {
-    "app.elastic.filter=context,terminology,kds_module"
+    "app.elastic.filter=context,terminology,kds_module",
+    "app.elastic.query.terminology.fields=display.de,display.en,termcode^2,display.original^0.5"
 })
 public class TerminologyEsServiceIT {
 
@@ -383,6 +384,7 @@ public class TerminologyEsServiceIT {
     String entryId = "1026c3ef-9f0a-3db3-94e7-7615c8041706";
     var relations = assertDoesNotThrow(() -> terminologyEsService.getRelationEntryByHash(entryId));
     assertThat(relations).isNotNull();
+    assertThat(relations.selectable()).isTrue();
     assertThat(relations.parents()).isNotNull();
     assertThat(relations.parents()).isNotEmpty();
     assertThat(relations.parents().stream().toList().get(0)).isInstanceOf(RelativeEntry.class);
