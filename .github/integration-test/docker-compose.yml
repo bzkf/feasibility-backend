@@ -93,7 +93,7 @@ services:
       POSTGRES_DB: "dataportal"
 
   dataportal-elastic:
-    image: docker.elastic.co/elasticsearch/elasticsearch:9.5.0
+    image: docker.elastic.co/elasticsearch/elasticsearch:9.5.1
     container_name: dataportal-elastic
     ports:
       - '9200:9200'
@@ -122,12 +122,12 @@ services:
       - "blaze-data:/app/data"
 
   flare:
-    image: ghcr.io/medizininformatik-initiative/flare:2.7.0
+    image: ghcr.io/medizininformatik-initiative/flare:2.8.0
     ports:
       - "8092:8080"
     environment:
       FLARE_FHIR_SERVER: "http://blaze:8080/fhir"
-      JAVA_TOOL_OPTIONS: "-Xmx1g"
+      JAVA_TOOL_OPTIONS: "-Xmx4g"
       LOG_LEVEL: "debug"
     restart: unless-stopped
 
