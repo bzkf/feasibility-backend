@@ -237,9 +237,9 @@
     </dependency>
 
     <dependency>
-      <groupId>de.medizininformatik-initiative</groupId>
+      <groupId>de.bzkf</groupId>
       <artifactId>sq2cql</artifactId>
-      <version>1.3.0</version>
+      <version>1.3.0-bzkf-2</version>
     </dependency>
 
     <dependency>
@@ -393,6 +393,17 @@
         <enabled>true</enabled>
       </snapshots>
     </repository>
+    <repository>
+      <id>bzkf</id>
+      <name>GitHub BZKF Apache Maven Packages</name>
+      <url>https://maven.pkg.github.com/bzkf/*</url>
+      <releases>
+        <enabled>true</enabled>
+      </releases>
+      <snapshots>
+        <enabled>true</enabled>
+      </snapshots>
+    </repository>
   </repositories>
 
 
@@ -474,6 +485,12 @@
             <includeOnlyProperty>^git.commit.id.(abbrev|full)$</includeOnlyProperty>
             <includeOnlyProperty>^git.build.version$</includeOnlyProperty>
           </includeOnlyProperties>
+          <replacementProperties>
+            <replacementProperty>
+              <property>git.branch</property>
+              <value>${env.branch}</value>
+            </replacementProperty>
+          </replacementProperties>
           <commitIdGenerationMode>full</commitIdGenerationMode>
         </configuration>
       </plugin>
