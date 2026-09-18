@@ -16,7 +16,7 @@ public record ProfileEntry(
     String id,
     String name,
     DisplayEntry display,
-    ProfileDisplayEntry description,
+    DisplayEntry description,
     boolean selectable,
     String url,
     ProfileDisplayEntry module,
@@ -32,7 +32,7 @@ public record ProfileEntry(
         .id(document.id())
         .name(document.name())
         .display(DisplayEntry.of(document.display()))
-        .description(ProfileDisplayEntry.of(firstDisplay(document.description())))
+        .description(DisplayEntry.of(firstDisplay(document.description())))
         .selectable(document.selectable())
         .url(document.url())
         .module(ProfileDisplayEntry.of(document.module()))
