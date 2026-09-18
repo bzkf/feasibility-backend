@@ -230,7 +230,7 @@ public class ProfileServiceIT {
     assertNotNull(result);
     assertThat(result.id()).isEqualTo("diagnose-condition-id");
     assertThat(result.description()).isNotNull();
-    assertThat(result.description().display().original()).isEqualTo("Diagnose Beschreibung");
+    assertThat(result.description().original()).isEqualTo("Diagnose Beschreibung");
     assertThat(result.resourceType()).isNotNull();
     assertThat(result.resourceType().display().original()).isEqualTo("Condition");
     assertThat(result.resourceType().display().translations()).extracting("language", "value")

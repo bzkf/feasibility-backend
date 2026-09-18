@@ -2059,7 +2059,7 @@ components:
         display:
           $ref: "#/components/schemas/DisplayEntry"
         description:
-          $ref: "#/components/schemas/ProfileDisplayEntry"
+          $ref: "#/components/schemas/DisplayEntry"
         selectable:
           type: boolean
           examples:
