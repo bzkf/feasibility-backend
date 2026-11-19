@@ -35,7 +35,7 @@ class SettingsControllerIT {
   @Test
   @WithMockUser(roles = "DATAPORTAL_TEST_USER")
   void getSettings_succeeds() throws Exception {
-    mockMvc.perform(get(URI.create("/.settings")).with(csrf()))
+    mockMvc.perform(get(URI.create("/backend/.settings")).with(csrf()))
         .andExpect(status().isOk());
   }
 }
