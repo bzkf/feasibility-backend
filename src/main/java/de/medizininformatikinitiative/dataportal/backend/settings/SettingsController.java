@@ -61,7 +61,7 @@ public class SettingsController {
   private Integer maxSavedQueriesPerUser;
 
 
-  @GetMapping("/.settings")
+  @GetMapping("/backend/.settings")
   public Map<String, Object> getSettings() {
     Duration backendPollingSummaryLimit;
     Duration uiPollingSummaryLimit;
